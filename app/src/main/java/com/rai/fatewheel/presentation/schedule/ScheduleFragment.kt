@@ -47,10 +47,10 @@ class ScheduleFragment : Fragment() {
     }
 
     private fun initView() {
-        viewParent.rclrSchedule.layoutManager =
+        viewParent.listSchedule.layoutManager =
             LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         adapter = ScheduleAdapter()
-        viewParent.rclrSchedule.adapter = adapter
+        viewParent.listSchedule.adapter = adapter
 
     }
 

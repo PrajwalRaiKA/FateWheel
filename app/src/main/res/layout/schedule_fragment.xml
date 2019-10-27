@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="@+id/textMorning" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rclrSchedule"
+        android:id="@+id/listSchedule"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

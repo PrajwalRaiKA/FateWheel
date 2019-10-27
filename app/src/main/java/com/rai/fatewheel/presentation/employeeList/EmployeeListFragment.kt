@@ -43,10 +43,10 @@ class EmployeeListFragment : Fragment() {
     }
 
     private fun initView() {
-        viewParent.rclrEnggineer.layoutManager =
+        viewParent.listEngineer.layoutManager =
             LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         adapter = EngineerAdapter()
-        viewParent.rclrEnggineer.adapter = adapter
+        viewParent.listEngineer.adapter = adapter
 
         viewParent.buttonCreateSchedule.setOnClickListener {
             val args = Bundle()
