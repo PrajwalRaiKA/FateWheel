@@ -69,6 +69,11 @@ class EmployeeListFragment : Fragment() {
         })
 
         viewModel.engineerList.observe(viewLifecycleOwner, Observer {
+            if (it.isEmpty()) {
+                viewParent.buttonCreateSchedule.visibility = View.GONE
+            }else{
+                viewParent.buttonCreateSchedule.visibility = View.VISIBLE
+            }
             adapter.setData(it)
         })
     }
