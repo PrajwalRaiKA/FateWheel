@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FateWheel</string>
+    <string name="create_schedule">Create Schedule</string>
+    <string name="evening">Evening</string>
+    <string name="morning">Morning</string>
+    <string name="day">Day</string>
 </resources>

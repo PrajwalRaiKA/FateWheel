@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/employeeListFragment">
+
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.rai.fatewheel.presentation.employeeList.EmployeeListFragment"
+        android:label="employee_list_fragment"
+        tools:layout="@layout/employee_list_fragment" >
+        <action
+            android:id="@+id/action_employeeListFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.rai.fatewheel.presentation.schedule.ScheduleFragment"
+        android:label="schedule_fragment"
+        tools:layout="@layout/schedule_fragment" />
+</navigation>
