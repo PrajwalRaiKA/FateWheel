@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.rai.fatewheel.Constant
+import com.rai.fatewheel.application.Constant
 import com.rai.fatewheel.R
 import com.rai.fatewheel.data.entities.Engineer
 import kotlinx.android.synthetic.main.schedule_fragment.view.*

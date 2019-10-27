@@ -1,8 +1,9 @@
-package com.rai.fatewheel
+package com.rai.fatewheel.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.rai.fatewheel.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
