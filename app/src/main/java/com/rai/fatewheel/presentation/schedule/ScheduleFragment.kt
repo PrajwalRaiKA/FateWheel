@@ -20,7 +20,7 @@ class ScheduleFragment : Fragment() {
     private lateinit var adapter: ScheduleAdapter
     private lateinit var engineerList: ArrayList<Engineer>
     private lateinit var viewParent: View
-    val viewModel: ScheduleViewModel by inject()
+    private val viewModel: ScheduleViewModel by inject()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -2,10 +2,6 @@ package com.rai.fatewheel.application
 
 object Constant {
 
-    // Custom invalid int that will be used when we don`t have int.
-    const val CUSTOM_INVALID_INT = -1
-
-
     // Number of working days in schedule period
     const val SCHEDULE_PERIOD_DAYS = 10
 

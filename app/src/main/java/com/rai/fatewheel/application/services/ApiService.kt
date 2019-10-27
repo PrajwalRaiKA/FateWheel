@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface ApiService {
 
     @GET("/engineers")
-    fun getEngineers(): Deferred<EngineerListResponse>
+    fun getEngineersAsync(): Deferred<EngineerListResponse>
 }
 

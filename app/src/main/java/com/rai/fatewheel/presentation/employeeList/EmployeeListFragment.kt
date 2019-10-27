@@ -1,19 +1,18 @@
 package com.rai.fatewheel.presentation.employeeList
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.rai.fatewheel.R
 import com.rai.fatewheel.application.Constant
 import com.rai.fatewheel.presentation.MainActivity
-
-import com.rai.fatewheel.R
 import kotlinx.android.synthetic.main.employee_list_fragment.view.*
 import org.koin.android.ext.android.inject
 
@@ -22,7 +21,7 @@ class EmployeeListFragment : Fragment() {
 
     private lateinit var viewParent: View
     private lateinit var adapter: EngineerAdapter
-    val viewModel: EmployeeListViewModel by inject()
+    private val viewModel: EmployeeListViewModel by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -5,14 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.rai.fatewheel.R
-import com.rai.fatewheel.data.entities.Engineer
 import com.rai.fatewheel.data.entities.Schedule
-import kotlinx.android.synthetic.main.row_engineer.view.*
 import kotlinx.android.synthetic.main.row_schedule.view.*
 
 class ScheduleAdapter : RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolder>() {
 
-    var scheduleList: List<Schedule> = listOf()
+    private var scheduleList: List<Schedule> = listOf()
 
 
     fun setData(scheduleList: List<Schedule>) {
@@ -22,8 +20,7 @@ class ScheduleAdapter : RecyclerView.Adapter<ScheduleAdapter.ScheduleViewHolder>
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScheduleViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.row_schedule, parent, false)
-        val holder = ScheduleViewHolder(v)
-        return holder
+        return ScheduleViewHolder(v)
     }
 
     override fun getItemCount(): Int {

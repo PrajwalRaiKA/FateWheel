@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.row_engineer.view.*
 
 class EngineerAdapter : RecyclerView.Adapter<EngineerAdapter.EngineerViewHolder>() {
 
-    var engineerList: List<Engineer> = listOf()
+    private var engineerList: List<Engineer> = listOf()
 
 
     fun setData(engineerList: List<Engineer>) {
@@ -20,8 +20,7 @@ class EngineerAdapter : RecyclerView.Adapter<EngineerAdapter.EngineerViewHolder>
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EngineerViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.row_engineer, parent, false)
-        val holder = EngineerViewHolder(v)
-        return holder
+        return EngineerViewHolder(v)
     }
 
     override fun getItemCount(): Int {
